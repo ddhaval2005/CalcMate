@@ -16,8 +16,6 @@ class SettingsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_settings)
 
-
-
         // Set up click listeners for each settings option
         val optionAbout: LinearLayout = findViewById(R.id.optionAbout)
         optionAbout.setOnClickListener {
@@ -44,26 +42,21 @@ class SettingsActivity : AppCompatActivity() {
         }
 
         val optionRateUs: LinearLayout = findViewById(R.id.optionRateUs)
-        fun openPrivacyPolicy() {
-            // You will need to host your privacy policy on a website and put the URL here.
-            // For example: "https://www.your-app-website.com/privacy"
-            val url = "https://www.google.com" // Replace with your actual privacy policy URL
+        // Correct implementation of the rate us functionality.
+        optionRateUs.setOnClickListener {
+            val url = "https://play.google.com/store/apps/details?id=$packageName"
             val intent = Intent(Intent.ACTION_VIEW)
             intent.data = Uri.parse(url)
             startActivity(intent)
         }
 
-
-
-
-
-        // Set up the footer navigation
-
+        // Initialize and set up the footer navigation
+        setupFooter()
     }
 
     private fun setupFooter() {
         val btnHome: ImageButton = findViewById(R.id.btnHome)
-        val btnFavorites: ImageButton = findViewById(R.id.btnFavorites) // Renamed from btnHistory for clarity
+        val btnFavorites: ImageButton = findViewById(R.id.btnFavorites)
         val btnSettings: ImageButton = findViewById(R.id.btnSettings)
 
         // Set up listeners for the footer buttons
@@ -78,8 +71,8 @@ class SettingsActivity : AppCompatActivity() {
         }
 
         btnSettings.setOnClickListener {
-            val intent = Intent(this, SettingsActivity::class.java)
-            startActivity(intent)
+            // Already on Settings, do nothing or show a message.
+            Toast.makeText(this, "You are already on the Settings page", Toast.LENGTH_SHORT).show()
         }
     }
 }

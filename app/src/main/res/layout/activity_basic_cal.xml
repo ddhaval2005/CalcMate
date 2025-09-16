@@ -61,7 +61,7 @@
             android:layout_columnWeight="1"
             android:layout_margin="8dp"
             app:cardCornerRadius="50dp"
-            app:cardBackgroundColor="#0041C2">
+            app:cardBackgroundColor="#FBFF3737">
             <ImageButton
                 android:id="@+id/btn_clear"
                 android:layout_width="match_parent"
@@ -80,7 +80,7 @@
             android:layout_columnWeight="1"
             android:layout_margin="8dp"
             app:cardCornerRadius="50dp"
-            app:cardBackgroundColor="#0041C2">
+            app:cardBackgroundColor="@color/Blue_berry">
             <ImageButton
                 android:id="@+id/btn_plus_minus"
                 android:layout_width="match_parent"
@@ -99,7 +99,7 @@
             android:layout_columnWeight="1"
             android:layout_margin="8dp"
             app:cardCornerRadius="50dp"
-            app:cardBackgroundColor="#0041C2">
+            app:cardBackgroundColor="@color/Blue_berry">
             <ImageButton
                 android:id="@+id/btn_percent"
                 android:layout_width="match_parent"
@@ -118,7 +118,7 @@
             android:layout_columnWeight="1"
             android:layout_margin="8dp"
             app:cardCornerRadius="50dp"
-            app:cardBackgroundColor="#0041C2">
+            app:cardBackgroundColor="@color/Blue_berry">
             <ImageButton
                 android:id="@+id/btn_divide"
                 android:layout_width="match_parent"
@@ -195,7 +195,7 @@
             android:layout_columnWeight="1"
             android:layout_margin="8dp"
             app:cardCornerRadius="50dp"
-            app:cardBackgroundColor="#0041C2">
+            app:cardBackgroundColor="#5FA3F1">
             <ImageButton
                 android:id="@+id/btn_multiply"
                 android:layout_width="match_parent"
@@ -271,7 +271,7 @@
             android:layout_columnWeight="1"
             android:layout_margin="8dp"
             app:cardCornerRadius="50dp"
-            app:cardBackgroundColor="#0041C2">
+            app:cardBackgroundColor="@color/Blue_berry">
             <ImageButton
                 android:id="@+id/btn_minus"
                 android:layout_width="match_parent"
@@ -348,7 +348,7 @@
             android:layout_columnWeight="1"
             android:layout_margin="8dp"
             app:cardCornerRadius="50dp"
-            app:cardBackgroundColor="#0041C2">
+            app:cardBackgroundColor="@color/Blue_berry">
             <ImageButton
                 android:id="@+id/btn_add"
                 android:layout_width="match_parent"
@@ -407,7 +407,7 @@
             android:layout_columnWeight="1"
             android:layout_margin="8dp"
             app:cardCornerRadius="50dp"
-            app:cardBackgroundColor="#0041C2">
+            app:cardBackgroundColor="#FDD835">
             <ImageButton
                 android:id="@+id/btn_equal"
                 android:layout_width="match_parent"

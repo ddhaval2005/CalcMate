@@ -6,22 +6,35 @@
     android:layout_height="match_parent"
     android:background="#FFFFFF"
     android:orientation="vertical"
-    android:padding="16dp"
     tools:context=".ProgrammerCalculatorActivity">
 
-    <!-- Title -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="16dp"
-        android:text="Programmer's Calculator"
-        android:textColor="#0041C2"
-        android:textSize="24sp"
-        android:textStyle="bold" />
+    <LinearLayout
+        android:id="@+id/app_header"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#0041C2"
+        android:elevation="4dp"
+        android:gravity="center"
+        android:orientation="horizontal">
 
-    <!-- Input Field -->
-    <androidx.cardview.widget.CardView
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:text="Programmer`s Calculator"
+            android:layout_marginTop="45dp"
+            android:textColor="#FFFFFF"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="16dp"> <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:cardCornerRadius="12dp"
@@ -36,40 +49,35 @@
             android:inputType="text"
             android:padding="16dp"
             android:textSize="20sp"
-            android:background="@android:color/white"
+            android:background="#FFFFFF"
             android:layout_gravity="center_vertical"
             android:minHeight="50dp"/>
     </androidx.cardview.widget.CardView>
 
-    <!-- Clear Button -->
-    <Button
-        android:id="@+id/clearButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Clear"
-        android:layout_gravity="end"
-        android:layout_marginBottom="16dp"
-        android:backgroundTint="#0041C2"
-        android:textColor="@android:color/white"
-        android:paddingStart="24dp"
-        android:paddingEnd="24dp"/>
+        <Button
+            android:id="@+id/clearButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear"
+            android:layout_gravity="end"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#0041C2"
+            android:textColor="@android:color/white"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp"/>
 
-    <!-- Results Card View -->
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:cardCornerRadius="16dp"
-        app:cardElevation="8dp">
-
-        <LinearLayout
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="16dp"
-            android:backgroundTint="#D3E3FF">
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp">
 
-            <!-- Decimal Value -->
-            <TextView
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="#FFFFFF"> <TextView
                 android:id="@+id/decimalValue"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -78,35 +86,33 @@
                 android:textSize="18sp"
                 android:textColor="#000" />
 
-            <!-- Binary Value -->
-            <TextView
-                android:id="@+id/binaryValue"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:text="Binary: "
-                android:textSize="18sp"
-                android:textColor="#000" />
+                <TextView
+                    android:id="@+id/binaryValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="Binary: "
+                    android:textSize="18sp"
+                    android:textColor="#000" />
 
-            <!-- Octal Value -->
-            <TextView
-                android:id="@+id/octalValue"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:text="Octal: "
-                android:textSize="18sp"
-                android:textColor="#000" />
+                <TextView
+                    android:id="@+id/octalValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="Octal: "
+                    android:textSize="18sp"
+                    android:textColor="#000" />
 
-            <!-- Hexadecimal Value -->
-            <TextView
-                android:id="@+id/hexValue"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Hex: "
-                android:textSize="18sp"
-                android:textColor="#000" />
-        </LinearLayout>
-    </androidx.cardview.widget.CardView>
+                <TextView
+                    android:id="@+id/hexValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hex: "
+                    android:textSize="18sp"
+                    android:textColor="#000" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
 
 </LinearLayout>

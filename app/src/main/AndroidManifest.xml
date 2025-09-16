@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CalcMate_New">
+
+        <!-- Splash is your launcher -->
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- Dashboard that Splash opens -->
+        <activity android:name=".DashboardActivity" /> <!-- Destinations -->
+        <activity android:name=".BasicCalActivity" />
+        <activity android:name=".ScientificCalcActivity" />
+        <activity android:name=".UnitConverterActivity" />
+        <activity android:name=".LengthConverterActivity" />
+        <activity android:name=".WeightConverterActivity" />
+        <activity android:name=".TemperatureConverterActivity" />
+        <activity android:name=".VolumeConverterActivity" />
+        <activity android:name=".AreaConverterActivity" />
+        <activity android:name=".DataTransferRateConverterActivity" />
+        <activity android:name=".FinancialToolsActivity" />
+        <activity android:name=".LoanCalculatorActivity" />
+        <activity android:name=".CompoundInterestCalculatorActivity" />
+        <activity android:name=".SimpleInterestCalculatorActivity" />
+        <activity android:name=".TipCalculatorActivity" />
+        <activity android:name=".HealthCalcActivity" />
+        <activity android:name=".BmiCalculatorActivity" />
+        <activity android:name=".BmrCalculatorActivity" />
+        <activity android:name=".IdealWeightActivity" />
+        <activity android:name=".CalorieTrackerActivity" />
+        <activity android:name=".DateTimeToolsActivity" />
+        <activity android:name=".DateDifferenceActivity" />
+        <activity android:name=".TimeZoneActivity" />
+        <activity android:name=".TimestampActivity" />
+        <activity android:name=".ProgrammerCalculatorActivity" /> <!-- Add these new activities that the footer links to -->
+        <activity android:name=".FeedbackActivity" />
+        <activity android:name=".AboutusActivity"/>
+        <activity android:name=".ContactActivity"/>
+        <activity android:name=".PolicyActivity"/>
+        <activity android:name=".FavoritesActivity"/>
+        <activity android:name=".SettingsActivity" />
+
+    </application>
+
+</manifest>

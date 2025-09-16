@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F8FBFF"
+    android:layout_marginTop="0dp"
+    tools:context=".UnitConverterActivity">
+
+    <!-- Header Section -->
+    <LinearLayout
+        android:id="@+id/app_header"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:background="@color/Blue_berry"
+        android:elevation="4dp"
+        android:layout_marginTop="0dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:gravity="center_vertical">
+
+
+
+        <!-- Title of the Activity -->
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Date &amp; Time Tools"
+            android:textColor="#FFFFFF"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp" />
+
+
+
+    </LinearLayout>
+
+
+    <!-- Main Content Section -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Title for the Grid -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choose a Date &amp; Time Tool"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/Blue_berry"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="24dp" />
+
+            <!-- 2 x 3 Grid of ImageButtons for different converters -->
+            <GridLayout
+                android:id="@+id/toolsGrid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:rowCount="3"
+                android:alignmentMode="alignMargins"
+                android:columnOrderPreserved="false"
+                android:useDefaultMargins="true">
+
+                <!-- Date Difference Calculator -->
+                <LinearLayout
+                    android:id="@+id/cardDateDifference"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="12dp">
+
+                    <ImageButton
+                        android:id="@+id/btnDateDifference"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/date_difference_logo"
+                        android:scaleType="centerInside"
+                        android:background="@drawable/button_card_bg"
+                        android:elevation="10dp"
+                        android:contentDescription="Date Difference Converter"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Date Difference"
+                            android:textColor="#0041C2"
+                            android:textSize="14sp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="7dp"
+                            android:textStyle="bold"/>
+                        <ImageView
+                            android:id="@+id/starDateDifference"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginStart="4dp"
+                            android:src="@drawable/ic_star_outline"
+                            android:contentDescription="Favorite Date diff Calculator" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Time Zone Converter -->
+                <LinearLayout
+                    android:id="@+id/cardTimeZone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="12dp">
+
+                    <ImageButton
+                        android:id="@+id/btnTimeZoneConverter"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/timezone_logo"
+                        android:scaleType="centerInside"
+                        android:background="@drawable/button_card_bg"
+                        android:elevation="10dp"
+                        android:contentDescription="Time Zone Converter"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Time Zone"
+                            android:textColor="#0041C2"
+                            android:textSize="14sp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="7dp"
+                            android:textStyle="bold"/>
+
+                        <ImageView
+                            android:id="@+id/starTimeZone"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginStart="4dp"
+                            android:src="@drawable/ic_star_outline"
+                            android:contentDescription="Favorite Timezone Calculator" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Timestamp Converter -->
+                <LinearLayout
+                    android:id="@+id/cardTimestamp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="12dp">
+
+                    <ImageButton
+                        android:id="@+id/btnTimestampConverter"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/timestamp_logo"
+                        android:scaleType="centerInside"
+                        android:background="@drawable/button_card_bg"
+                        android:elevation="10dp"
+                        android:contentDescription="Timestamp Converter"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Timestamp"
+                            android:textColor="#0041C2"
+                            android:textSize="14sp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="7dp"
+                            android:textStyle="bold"/>
+
+                        <ImageView
+                            android:id="@+id/starTimeStamp"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginStart="4dp"
+                            android:src="@drawable/ic_star_outline"
+                            android:contentDescription="Favorite Timestamp Calculator" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </GridLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Footer Section -->
+    <!-- We include the common footer layout here -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/Blue_berry"
+        android:elevation="8dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp">
+
+        <!-- Home Icon -->
+        <ImageButton
+            android:id="@+id/btnHome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_home"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Home"
+            android:padding="12dp" />
+
+        <!-- History Icon -->
+        <ImageButton
+            android:id="@+id/btnFavorites"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_fav"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="History"
+            android:padding="12dp" />
+
+        <!-- Settings Icon -->
+        <ImageButton
+            android:id="@+id/btnSettings"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_settings"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Settings"
+            android:padding="12dp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,30 @@
+<resources>
+
+    <string name="app_name">CalcMate</string>
+    <string name="about_app_name">CalcMate</string>
+    <string name="about_version_label">Version 1.0.0</string>
+    <string name="about_app_description">
+        Tired of installing multiple calculator apps for every need? CalcMate is the ultimate all-in-one solution. From basic arithmetic to complex scientific calculations, unit and currency conversions, and financial planning, CalcMate brings every tool you need into a single, elegant app. We believe everyone deserves a powerful and simple tool to handle life\'s calculations, whether you\'re a student, a professional, or simply managing your daily finances.
+    </string>
+    <string name="about_made_with_love">Made with ♡ by The CalcMate Team</string>
+    <string name="app_logo_description">CalcMate App Logo</string>
+
+    <string name="feedback_title">Send Feedback</string>
+    <string name="feedback_instruction">We would love to hear your thoughts. Your feedback helps us make the app better for you.</string>
+    <string name="feedback_hint">Type your feedback here...</string>
+    <string name="rating_label">Rate your experience:</string>
+    <string name="send_button_text">Send Feedback</string>
+
+    <string name="privacy_policy_text">
+        &lt;h2&gt;Privacy Policy for CalcMate&lt;/h2&gt;
+        &lt;p&gt;Effective Date: May 20, 2024&lt;/p&gt;
+
+        &lt;p&gt;Your privacy is important to us. CalcMate is designed to be a simple, offline calculator. It does not collect, store, or transmit any personal information about you or your device. All calculations and data you enter (such as your weight or height) are processed and stored locally on your device and are never sent to our servers.&lt;/p&gt;
+
+        &lt;h3&gt;No Data Collection&lt;/h3&gt;
+        &lt;p&gt;We do not collect any personal data, usage data, or device information. There are no third-party analytics, advertising, or data-sharing services in this app.&lt;/p&gt;
+
+        &lt;h3&gt;Contact Us&lt;/h3&gt;
+        &lt;p&gt;If you have any questions about this policy, please contact us at team.j.d@marwadiuniversity.ac.in.&lt;/p&gt;
+    </string>
+</resources>

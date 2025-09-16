@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This shape drawable defines the border for the CardView. -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- The solid color is the background of the border itself. It should match the CardView color. -->
+    <solid android:color="@android:color/white" />
+
+    <!-- This stroke is the border. You can customize its color and width. -->
+    <stroke
+        android:width="2dp"
+        android:color="#555555" />
+
+    <!-- Rounded corners to match the CardView. It's important to set this here too. -->
+    <corners android:radius="16dp" />
+</shape>

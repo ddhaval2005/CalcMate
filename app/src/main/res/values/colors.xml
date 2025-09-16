@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Common Colors (used in both themes) -->
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="purple_500">#6200EE</color>
+    <color name="purple_700">#3700B3</color>
+    <color name="teal_200">#03DAC5</color>
+    <color name="teal_700">#018786</color>
+    <color name="blue_500">#2196F3</color>
+    <color name="blue_700">#1976D2</color>
+    <color name="Blue_berry">#0041C2</color>
+
+
+    <!-- Basic Calculator Colors -->
+    <color name="background_gray">#F5F5F5</color>
+    <color name="display_background">#FFFFFF</color>
+    <color name="text_black">#000000</color>
+
+    <!-- Numpad Colors -->
+    <color name="button_numpad_background">#F5F5F5</color>
+    <color name="button_background_white">#FFFFFF</color>
+    <color name="button_border_gray">#C0C0C0</color>
+
+    <!-- Theme-specific colors - LIGHT MODE -->
+    <color name="background_light">#E0E0E0</color>
+    <color name="text_color_light">#212121</color>
+    <color name="colorPrimary_light">#6200EE</color>
+    <color name="colorPrimaryDark_light">#3700B3</color>
+
+    <color name="scientific_button_bg_light">#C0C0C0</color>
+    <color name="scientific_button_text_light">#212121</color>
+    <color name="standard_button_bg_light">#E0E0E0</color>
+    <color name="standard_button_text_light">#212121</color>
+    <color name="operator_button_bg_light">#FF9800</color>
+    <color name="operator_button_text_light">#FFFFFF</color>
+    <color name="tab_icon_color_light">#9E9E9E</color>
+    <color name="tab_selected_color_light">#659EC7</color>
+    <color name="calc_header_bg_light">#659EC7</color>
+    <color name="calc_footer_bg_light">#FFFFFF</color>
+
+    <!-- Theme-specific colors - DARK MODE -->
+    <color name="background_dark">#121212</color>
+    <color name="text_color_dark">#FFFFFF</color>
+    <color name="colorPrimary_dark">#FF6347</color>
+    <color name="colorPrimaryDark_dark">#FF6347</color>
+
+    <color name="scientific_button_bg_dark">#424242</color>
+    <color name="scientific_button_text_dark">#FFFFFF</color>
+    <color name="standard_button_bg_dark">#212121</color>
+    <color name="standard_button_text_dark">#FFFFFF</color>
+    <color name="operator_button_bg_dark">#FF9800</color>
+    <color name="operator_button_text_dark">#FFFFFF</color>
+    <color name="tab_icon_color_dark">#BDBDBD</color>
+    <color name="tab_selected_color_dark">#FF6347</color>
+    <color name="calc_header_bg_dark">#FF6347</color>
+    <color name="calc_footer_bg_dark">#1F1F1F</color>
+
+    <!-- Aliases for styles.xml to use -->
+    <!-- These will automatically resolve to the correct color based on the current theme -->
+    <color name="colorPrimary">@color/colorPrimary_light</color>
+    <color name="colorPrimaryDark">@color/colorPrimaryDark_light</color>
+    <color name="colorAccent">@color/teal_200</color>
+    <color name="background">@color/background_light</color>
+    <color name="text_color">@color/text_color_light</color>
+    <color name="scientific_button_bg">@color/scientific_button_bg_light</color>
+    <color name="scientific_button_text">@color/scientific_button_text_light</color>
+    <color name="standard_button_bg">@color/standard_button_bg_light</color>
+    <color name="standard_button_text">@color/standard_button_text_light</color>
+    <color name="operator_button_bg">@color/operator_button_bg_light</color>
+    <color name="operator_button_text">@color/operator_button_text_light</color>
+    <color name="tab_icon_color">@color/tab_icon_color_light</color>
+    <color name="tab_selected_color">@color/tab_selected_color_light</color>
+    <color name="calc_header_bg">@color/calc_header_bg_light</color>
+    <color name="calc_footer_bg">@color/calc_footer_bg_light</color>
+
+    <!-- Old colors for reference - you can remove these after updating layouts -->
+    <color name="blue_primary">#2196F3</color>
+    <color name="my_dark_primary">#FF6347</color>
+    <color name="my_dark_on_primary">#FFFFFF</color>
+    <color name="my_dark_secondary">#4682B4</color>
+    <color name="my_dark_on_secondary">#FFFFFF</color>
+    <color name="my_dark_accent">#FFA500</color>
+    <color name="my_dark_background">#121212</color>
+    <color name="calc_bg">#FF1C1C1C</color>
+    <color name="calc_display">#FF2E2E2E</color>
+    <color name="calc_number">#FF4E4E4E</color>
+    <color name="calc_operator">#FFEF9A00</color>
+    <color name="calc_equal">#FF00C853</color>
+    <color name="calc_clear">#FFD32F2F</color>
+    <color name="calc_btn_text">#FFFFFFFF</color>
+    <color name="calc_orange">#FFA500</color>
+    <color name="calc_gray">#A9A9A9</color>
+    <color name="calc_dark_gray">#333333</color>
+    <color name="calc_white">#FFFFFF</color>
+
+
+    <color name="bg">#000000</color>
+
+    <color name="bgsettings">#659EC7</color>
+    <color name="dark_blue">#1A73E8</color>
+
+
+
+    <color name="purple_200">#FFBB86FC</color>
+
+    <color name="card_background">#FFFFFF</color>
+    <color name="divider_color">#555555</color>
+
+
+<!--    Unit converter colours-->
+    <color name="primary_dark">#2C3E50</color>
+    <color name="primary">#34495E</color>
+    <color name="accent">#E74C3C</color>
+    <color name="bgu">#ECF0F1</color>
+    <color name="text_coloru">#4169E1</color>
+    <color name="divider_coloru">#BDC3C7</color>
+    <color name="whiteu">#FFFFFF</color>
+
+
+<!--    Length converter-->
+    <color name="text_hint_color">#A5A5A5</color>
+
+
+    <!-- Background and surface colors -->
+    <color name="backgroundColor">#FFFFFF</color>
+    <color name="surfaceColor">#1E1E1E</color>
+
+    <!-- Text and hint colors -->
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="textColorSecondary">#CCCCCC</color>
+    <color name="textHintColor">#666666</color>
+
+    <!-- Button colors -->
+    <color name="buttonColor">#659EC7</color>
+    <color name="buttonTextColor">#000000</color>
+
+    <!-- Other UI colors -->
+    <color name="transparent_white">#22FFFFFF</color>
+</resources>

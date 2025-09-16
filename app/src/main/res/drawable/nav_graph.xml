@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graphj"
+    app:startDestination="@id/homeFragment">
+
+    <!-- Home Screen -->
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.all_in_one_calc.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_basicCalcFragment"
+            app:destination="@id/basicCalcFragment" />
+    </fragment>
+
+    <!-- Basic Calculator Screen -->
+    <fragment
+        android:id="@+id/basicCalcFragment"
+        android:name="com.example.all_in_one_calc.BasicCalcFragment"
+        android:label="Basic Calculator"
+        tools:layout="@layout/fragment_basic_calc" />
+</navigation>

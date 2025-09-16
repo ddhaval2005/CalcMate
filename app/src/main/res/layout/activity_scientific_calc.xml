@@ -1,0 +1,633 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ScientificCalcActivity">
+
+    <TextView
+        android:id="@+id/display_result"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:gravity="end"
+        android:text="0"
+        android:textColor="@android:color/black"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/display_input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/display_input"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:gravity="end"
+        android:text="0"
+        android:textColor="@android:color/black"
+        android:textSize="72sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <GridLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideline"
+        android:columnCount="5"
+        android:rowCount="5">
+
+        <!-- Row 1 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="50dp"
+            app:cardBackgroundColor="#0041C2">
+            <ImageButton
+                android:id="@+id/btn_sin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/sin"
+                android:background="@android:color/transparent"
+                android:scaleType="centerInside"
+                android:padding="16dp"
+                android:contentDescription="Sine" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="50dp"
+            app:cardBackgroundColor="#0041C2">
+            <ImageButton
+                android:id="@+id/btn_cos"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/cos"
+                android:background="@android:color/transparent"
+                android:scaleType="centerInside"
+                android:padding="16dp"
+                android:contentDescription="Cosine" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="50dp"
+            app:cardBackgroundColor="#0041C2">
+            <ImageButton
+                android:id="@+id/btn_tan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/tan"
+                android:background="@android:color/transparent"
+                android:scaleType="centerInside"
+                android:padding="16dp"
+                android:contentDescription="Tangent" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="50dp"
+            app:cardBackgroundColor="#0041C2">
+            <ImageButton
+                android:id="@+id/btn_log"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/log"
+                android:background="@android:color/transparent"
+                android:scaleType="centerInside"
+                android:padding="1dp"
+                android:contentDescription="Log" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="50dp"
+            app:cardBackgroundColor="#0041C2">
+            <ImageButton
+                android:id="@+id/btn_pi"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/pi"
+                android:background="@android:color/transparent"
+                android:scaleType="centerInside"
+                android:padding="16dp"
+                android:contentDescription="Pi" />
+        </androidx.cardview.widget.CardView>
+
+
+        <!-- Row 2 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="50dp"
+            app:cardBackgroundColor="#0041C2">
+            <ImageButton
+                android:id="@+id/btn_clear"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/clear"
+                android:background="@android:color/transparent"
+                android:scaleType="centerInside"
+                android:padding="16dp"
+                android:contentDescription="Clear" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="50dp"
+            app:cardBackgroundColor="#0041C2">
+            <ImageButton
+                android:id="@+id/btn_plus_minus"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/plusandminus"
+                android:background="@android:color/transparent"
+                android:scaleType="centerInside"
+                android:padding="16dp"
+                android:contentDescription="Plus Minus" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="50dp"
+            app:cardBackgroundColor="#0041C2">
+            <ImageButton
+                android:id="@+id/btn_percent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/percent"
+                android:background="@android:color/transparent"
+                android:scaleType="centerInside"
+                android:padding="16dp"
+                android:contentDescription="Percentage" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="50dp"
+            app:cardBackgroundColor="#0041C2">
+            <ImageButton
+                android:id="@+id/btn_divide"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/divide"
+                android:background="@android:color/transparent"
+                android:scaleType="centerInside"
+                android:padding="16dp"
+                android:contentDescription="Divide" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="50dp"
+            app:cardBackgroundColor="#0041C2">
+            <ImageButton
+                android:id="@+id/btn_ln"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ln"
+                android:background="@android:color/transparent"
+                android:scaleType="centerInside"
+                android:padding="0dp"
+                android:contentDescription="Natural Logarithm" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- Row 3 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="50dp"
+            app:cardBackgroundColor="#D3E3FF">
+            <ImageButton
+                android:id="@+id/btn_7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/seven"
+                android:background="@android:color/transparent"
+                android:scaleType="centerInside"
+                android:padding="16dp"
+                android:contentDescription="Seven" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="50dp"
+            app:cardBackgroundColor="#D3E3FF">
+            <ImageButton
+                android:id="@+id/btn_8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/eight"
+                android:background="@android:color/transparent"
+                android:scaleType="centerInside"
+                android:padding="16dp"
+                android:contentDescription="Eight" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="50dp"
+            app:cardBackgroundColor="#D3E3FF">
+            <ImageButton
+                android:id="@+id/btn_9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/nine"
+                android:background="@android:color/transparent"
+                android:scaleType="centerInside"
+                android:padding="16dp"
+                android:contentDescription="Nine" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="50dp"
+            app:cardBackgroundColor="#0041C2">
+            <ImageButton
+                android:id="@+id/btn_multiply"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/multiply"
+                android:background="@android:color/transparent"
+                android:scaleType="centerInside"
+                android:padding="16dp"
+                android:contentDescription="Multiply" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="50dp"
+            app:cardBackgroundColor="#0041C2">
+            <ImageButton
+                android:id="@+id/btn_pow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/power"
+                android:background="@android:color/transparent"
+                android:scaleType="centerInside"
+                android:padding="10dp"
+                android:contentDescription="Power" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- Row 4 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="50dp"
+            app:cardBackgroundColor="#D3E3FF">
+            <ImageButton
+                android:id="@+id/btn_4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/four"
+                android:background="@android:color/transparent"
+                android:scaleType="centerInside"
+                android:padding="16dp"
+                android:contentDescription="Four" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="50dp"
+            app:cardBackgroundColor="#D3E3FF">
+            <ImageButton
+                android:id="@+id/btn_5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/five"
+                android:background="@android:color/transparent"
+                android:scaleType="centerInside"
+                android:padding="16dp"
+                android:contentDescription="Five" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="50dp"
+            app:cardBackgroundColor="#D3E3FF">
+            <ImageButton
+                android:id="@+id/btn_6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/six"
+                android:background="@android:color/transparent"
+                android:scaleType="centerInside"
+                android:padding="16dp"
+                android:contentDescription="Six" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="50dp"
+            app:cardBackgroundColor="#0041C2">
+            <ImageButton
+                android:id="@+id/btn_minus"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/minus"
+                android:background="@android:color/transparent"
+                android:scaleType="centerInside"
+                android:padding="16dp"
+                android:contentDescription="Minus" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="50dp"
+            app:cardBackgroundColor="#0041C2">
+            <ImageButton
+                android:id="@+id/btn_sqrt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/sqrt"
+                android:background="@android:color/transparent"
+                android:scaleType="centerInside"
+                android:padding="16dp"
+                android:contentDescription="Square Root" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- Row 5 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="50dp"
+            app:cardBackgroundColor="#D3E3FF">
+            <ImageButton
+                android:id="@+id/btn_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/one"
+                android:background="@android:color/transparent"
+                android:scaleType="centerInside"
+                android:padding="16dp"
+                android:contentDescription="One" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="50dp"
+            app:cardBackgroundColor="#D3E3FF">
+            <ImageButton
+                android:id="@+id/btn_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/two"
+                android:background="@android:color/transparent"
+                android:scaleType="centerInside"
+                android:padding="16dp"
+                android:contentDescription="Two" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="50dp"
+            app:cardBackgroundColor="#D3E3FF">
+            <ImageButton
+                android:id="@+id/btn_3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/three"
+                android:background="@android:color/transparent"
+                android:scaleType="centerInside"
+                android:padding="16dp"
+                android:contentDescription="Three" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="50dp"
+            app:cardBackgroundColor="#0041C2">
+            <ImageButton
+                android:id="@+id/btn_add"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/add"
+                android:background="@android:color/transparent"
+                android:scaleType="centerInside"
+                android:padding="16dp"
+                android:contentDescription="Add" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="50dp"
+            app:cardBackgroundColor="#0041C2">
+            <ImageButton
+                android:id="@+id/btn_fact"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/factorial"
+                android:background="@android:color/transparent"
+                android:scaleType="centerInside"
+                android:padding="16dp"
+                android:contentDescription="Factorial" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- Row 6 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="50dp"
+            app:cardBackgroundColor="#D3E3FF">
+            <ImageButton
+                android:id="@+id/btn_0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/zero"
+                android:background="@android:color/transparent"
+                android:scaleType="centerInside"
+                android:padding="16dp"
+                android:contentDescription="Zero" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="50dp"
+            app:cardBackgroundColor="#D3E3FF">
+            <ImageButton
+                android:id="@+id/btn_dot"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/dot"
+                android:background="@android:color/transparent"
+                android:scaleType="centerInside"
+                android:padding="16dp"
+                android:contentDescription="Dot" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="50dp"
+            app:cardBackgroundColor="#0041C2">
+            <ImageButton
+                android:id="@+id/btn_equal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/equal"
+                android:background="@android:color/transparent"
+                android:scaleType="centerInside"
+                android:padding="16dp"
+                android:contentDescription="Equal" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="50dp"
+            app:cardBackgroundColor="#0041C2">
+            <ImageButton
+                android:id="@+id/btn_exp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/exp"
+                android:background="@android:color/transparent"
+                android:scaleType="centerInside"
+                android:padding="0dp"
+                android:contentDescription="Exponent" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="50dp"
+            app:cardBackgroundColor="#0041C2">
+            <ImageButton
+                android:id="@+id/btn_mod"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/mod"
+                android:background="@android:color/transparent"
+                android:scaleType="centerInside"
+                android:padding="10dp"
+                android:contentDescription="Modulo" />
+        </androidx.cardview.widget.CardView>
+    </GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

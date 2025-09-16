@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:background="@color/calc_footer_bg">
+
+    <!-- Home Tab -->
+    <ImageButton
+        android:id="@+id/btnHome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/ic_home"
+        android:contentDescription="Home"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        app:tint="@color/tab_selected_color" />
+
+    <!-- History Tab -->
+    <ImageButton
+        android:id="@+id/btnHistory"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/ic_fav"
+        android:contentDescription="History"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        app:tint="@color/tab_icon_color" />
+
+    <!-- Settings Tab -->
+    <ImageButton
+        android:id="@+id/btnSettings"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/ic_settings"
+        android:contentDescription="Settings"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        app:tint="@color/tab_icon_color" />
+
+</LinearLayout>

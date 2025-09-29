@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#F8FBFF"
     android:padding="16dp"
     tools:context=".DateDifferenceActivity">
 
@@ -15,10 +14,10 @@
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:orientation="horizontal"
-        android:background="#0041C2"
-        android:elevation="4dp"
-        android:paddingStart="16dp"
-        android:paddingEnd="16dp"
+        android:background="@color/Blue_berry"
+        android:elevation="0dp"
+        android:paddingStart="0dp"
+        android:paddingEnd="0dp"
         android:gravity="center_vertical">
 
         <!-- Title of the Activity -->
@@ -29,7 +28,7 @@
             android:layout_weight="1"
             android:gravity="center"
             android:text="Date Difference"
-            android:textColor="#FFFFFF"
+            android:textColor="#775137"
             android:textSize="32sp"
             android:textStyle="bold" />
     </LinearLayout>
@@ -39,7 +38,8 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:paddingTop="16dp">
+        android:paddingTop="16dp"
+        android:background="#7FF9F6ED">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -77,7 +77,7 @@
                         android:gravity="end"
                         android:text="Select Date"
                         android:textSize="18sp"
-                        android:textColor="#0041C2"
+                        android:textColor="#775137"
                         android:layout_marginStart="8dp" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -113,7 +113,7 @@
                         android:gravity="end"
                         android:text="Select Date"
                         android:textSize="18sp"
-                        android:textColor="#0041C2"
+                        android:textColor="#775137"
                         android:layout_marginStart="8dp" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -126,7 +126,7 @@
                 android:text="Calculate Difference"
                 android:textColor="#FFFFFF"
                 android:paddingVertical="16dp"
-                android:backgroundTint="#0041C2"
+                android:backgroundTint="#775137"
                 app:cornerRadius="16dp"
                 android:layout_marginTop="24dp"
                 android:textStyle="bold" />
@@ -185,7 +185,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:src="@drawable/ic_home"
+            android:src="@drawable/ic_homeselected"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:contentDescription="Home"
             android:padding="12dp" />

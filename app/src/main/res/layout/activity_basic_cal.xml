@@ -195,7 +195,7 @@
             android:layout_columnWeight="1"
             android:layout_margin="8dp"
             app:cardCornerRadius="50dp"
-            app:cardBackgroundColor="#5FA3F1">
+            app:cardBackgroundColor="@color/Blue_berry">
             <ImageButton
                 android:id="@+id/btn_multiply"
                 android:layout_width="match_parent"

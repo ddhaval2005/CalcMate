@@ -15,7 +15,7 @@
         android:layout_height="100dp"
         android:orientation="horizontal"
         android:background="@color/Blue_berry"
-        android:elevation="4dp"
+        android:elevation="0dp"
         android:layout_marginTop="0dp"
         android:paddingStart="16dp"
         android:paddingEnd="16dp"
@@ -29,7 +29,7 @@
             android:layout_weight="1"
             android:gravity="center"
             android:text="Financial Tools"
-            android:textColor="#FFFFFF"
+            android:textColor="#775137"
             android:textSize="32sp"
             android:textStyle="bold"
             android:layout_marginTop="20dp"
@@ -44,7 +44,8 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:padding="16dp">
+        android:padding="16dp"
+        android:background="#7FF9F6ED">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -58,7 +59,7 @@
                 android:text="Choose a Financial Tool"
                 android:textSize="20sp"
                 android:textStyle="bold"
-                android:textColor="@color/Blue_berry"
+                android:textColor="#775137"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginBottom="24dp" />
 
@@ -103,7 +104,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Loan Calculator"
-                            android:textColor="#0041C2"
+                            android:textColor="#717171"
                             android:textSize="14sp"
                             android:layout_marginTop="8dp"
                             android:layout_marginBottom="5dp"
@@ -153,7 +154,7 @@
                             android:layout_marginTop="8dp"
                             android:text="Compound Interest\n Calculator"
                             android:textAlignment="center"
-                            android:textColor="#0041C2"
+                            android:textColor="#717171"
                             android:textSize="14sp"
                             android:textStyle="bold" />
 
@@ -199,7 +200,7 @@
                             android:layout_marginTop="8dp"
                             android:text="Simple Interest\n Calculator"
                             android:textAlignment="center"
-                            android:textColor="#0041C2"
+                            android:textColor="#717171"
                             android:textSize="14sp"
                             android:textStyle="bold" />
 
@@ -244,7 +245,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Tip Calculator"
-                            android:textColor="#0041C2"
+                            android:textColor="#717171"
                             android:textSize="14sp"
                             android:layout_marginTop="8dp"
                             android:layout_marginBottom="5dp"
@@ -271,7 +272,7 @@
         android:orientation="horizontal"
         android:gravity="center_vertical"
         android:background="@color/Blue_berry"
-        android:elevation="8dp"
+        android:elevation="0dp"
         android:paddingTop="8dp"
         android:paddingBottom="8dp">
 
@@ -281,7 +282,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:src="@drawable/ic_home"
+            android:src="@drawable/ic_homeselected"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:contentDescription="Home"
             android:padding="12dp" />

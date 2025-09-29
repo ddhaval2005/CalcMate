@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:background="@color/Blue_berry"
-        android:elevation="4dp"
+        android:elevation="0dp"
         android:gravity="center"
         android:orientation="horizontal">
 
@@ -23,7 +23,7 @@
             android:layout_height="100dp"
             android:text="Programmer`s Calculator"
             android:layout_marginTop="45dp"
-            android:textColor="#FFFFFF"
+            android:textColor="#775137"
             android:textSize="32sp"
             android:textStyle="bold" />
 
@@ -34,12 +34,15 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:orientation="vertical"
-        android:padding="16dp"> <androidx.cardview.widget.CardView
+        android:padding="16dp"
+        android:background="#7FF9F6ED">
+        <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:cardCornerRadius="12dp"
         app:cardElevation="6dp"
-        android:layout_marginBottom="16dp">
+        android:layout_marginBottom="16dp"
+        android:background="@color/white">
 
         <EditText
             android:id="@+id/inputEditText"
@@ -61,7 +64,7 @@
             android:text="Clear"
             android:layout_gravity="end"
             android:layout_marginBottom="16dp"
-            android:backgroundTint="@color/Blue_berry"
+            android:backgroundTint="#775137"
             android:textColor="@android:color/white"
             android:paddingStart="24dp"
             android:paddingEnd="24dp"/>

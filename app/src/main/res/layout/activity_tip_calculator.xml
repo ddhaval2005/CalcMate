@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F8FAFC"
+    android:background="#7FF9F6ED"
     android:padding="24dp"
     tools:context=".TipCalculatorActivity">
 
@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="Tip Calculator"
-        android:textColor="#0041C2"
+        android:textColor="#775137"
         android:textSize="28sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -44,7 +44,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Enter Details"
-                android:textColor="#334155"
+                android:textColor="#775137"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
@@ -100,7 +100,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:backgroundTint="#0041C2"
+        android:backgroundTint="#775137"
         android:paddingVertical="16dp"
         android:text="Calculate"
         app:cornerRadius="16dp"
@@ -131,7 +131,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Results"
-                android:textColor="#0041C2"
+                android:textColor="#775137"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 

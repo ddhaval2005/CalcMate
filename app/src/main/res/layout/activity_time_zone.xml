@@ -7,13 +7,15 @@
     android:orientation="vertical"
     android:padding="16dp"
     android:gravity="center_horizontal"
-    tools:context=".TimeZoneActivity">
+    tools:context=".TimeZoneActivity"
+    android:background="#7FF9F6ED"
+    >
     <LinearLayout
         android:id="@+id/app_header"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:orientation="horizontal"
-        android:background="#0041C2"
+        android:background="#775137"
         android:elevation="4dp"
         android:paddingStart="16dp"
         android:paddingEnd="16dp"
@@ -72,7 +74,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Convert"
-        android:backgroundTint="@color/Blue_berry"
+        android:backgroundTint="#775137"
         android:layout_marginBottom="24dp" />
 
     <TextView
